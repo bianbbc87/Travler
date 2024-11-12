@@ -14,16 +14,12 @@ import Link from 'next/link';
  */
 export default function Navigation() {
   return (
-    <nav className="py-5 flex justify-center">
-      <div className="w-4/5 px-10 justify-between inline-flex text-xl font-bold">
-        <Link href="/">GDSC DGU</Link>
-        <div className="justify-start items-start gap-10 flex">
-          <Link href="/seminar">Seminar</Link>
-          <Link href="/project">Project</Link>
-          <Link href="/member">Member</Link>
-          <Link href="/recruit">Recruit</Link>
-        </div>
+    <nav className="fixed bottom-0 left-0 w-full py-5 flex justify-center">
+      <div className="justify-start items-start gap-10 flex">
+        <Link href="/map">Map</Link>
+        <Link href="/">Home</Link>
+        <Link href="/festival">Festival</Link>
       </div>
-    </nav>
+  </nav>
   );
 }
